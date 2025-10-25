@@ -1,8 +1,85 @@
-.feed{ padding: 16px; }
-.toolbar{ display:flex; gap:12px; align-items:center; margin-bottom:12px; }
-.btn{ display:inline-block; padding:10px 14px; background:#e60023; color:#fff; text-decoration:none; border-radius:8px; border:0; cursor:pointer; }
-.btn[disabled]{ opacity:.6; cursor:not-allowed; }
+.feed {
+    padding: 24px 16px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
-/* Fila horizontal con scroll */
-.fila{ display:flex; gap:16px; overflow-x:auto; padding-bottom:8px; }
-app-pin-card{ flex: 0 0 260px; }
+.toolbar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #e60023;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #ad081b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn[disabled]:hover {
+    background: #e60023;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Masonry layout tipo Pinterest */
+.fila {
+    column-count: 5;
+    column-gap: 16px;
+    padding: 0 8px;
+}
+
+@media (max-width: 1600px) {
+    .fila {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fila {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .fila {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .fila {
+        column-count: 1;
+    }
+}
+
+app-pin-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+}
