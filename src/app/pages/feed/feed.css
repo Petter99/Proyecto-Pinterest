@@ -1,0 +1,8 @@
+.feed{ padding: 16px; }
+.toolbar{ display:flex; gap:12px; align-items:center; margin-bottom:12px; }
+.btn{ display:inline-block; padding:10px 14px; background:#e60023; color:#fff; text-decoration:none; border-radius:8px; border:0; cursor:pointer; }
+.btn[disabled]{ opacity:.6; cursor:not-allowed; }
+
+/* Fila horizontal con scroll */
+.fila{ display:flex; gap:16px; overflow-x:auto; padding-bottom:8px; }
+app-pin-card{ flex: 0 0 260px; }
