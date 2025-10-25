@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    --sidebar-w: 80px;
     --pinterest-red: #e60023;
     --pinterest-dark-red: #ad081b;
     --pinterest-gray: #767676;
@@ -21,22 +20,4 @@ body {
     color: #211922;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #cdcdcd;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
 }
